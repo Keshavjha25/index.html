@@ -1,0 +1,124 @@
+html {   /* this tag is copied from the original*/
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--black);
+    text-shadow: 0 2px 0 rgb(0 0 0 / 7%);
+}
+body {  /* this tag is copied from the original*/
+    background-image: url("./images/topography.svg"), linear-gradient(110deg, #f93d66, #6d47d9);
+    background-size: 340px, auto;
+    min-height: calc(100vh - 100px);
+    margin: 50px;
+    /* background: white; */
+    background-attachment: fixed;
+    letter-spacing: -1px;
+  }
+  .menu-ul{
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+  }
+  .menu-ul  li{
+      font-size: 20px;
+      text-align: center;
+      background-color: #ffc600;
+      text-transform: uppercase;
+      font-weight: 400px;
+      padding: 10px;
+      
+        }
+#face{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        "hero hero cta1"
+        "hero hero cta2";
+}
+.div0{     /* this tag is copied from the original*/
+    grid-area: hero;
+    min-height: 400px;
+    background: rgb(255, 255, 255) url(images/taco.jpg);
+    background-size: cover;
+    background-position: bottom right;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    border-radius: 14px;
+    
+}
+* {
+    box-sizing: inherit;
+}
+.div0 h1{
+    background-color: #ffc600;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.div0 p{
+    display: grid;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #ffc600;
+}
+.div1{
+    background: #ffc600;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    border-radius: 13px;
+}
+.div2{
+    background: #ffc600;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    border-radius: 13px;
+}
+.rate{
+    font-size: 8em;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 320;
+}
+.item{
+    font-size: 3em;
+    margin: 0;
+    font-weight: 600;
+}
+@media only screen and (max-width: 500px)
+{
+    .menu-ul{
+        display: block;
+        grid-gap: 10px;
+        padding: 10px;
+        list-style:circle ;
+        grid-gap: 25px !important;
+        grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+      }
+      .menu-ul  li{
+          font-size: 20px;
+          text-align: center;
+          background-color: #ffc600;
+          text-transform: uppercase;
+          font-weight: 400px;
+          padding: 10px;
+          
+            }
+            #face{
+                display: block;
+                margin: 25px;
+                grid-gap: 10px;
+                grid-template-areas:
+                    "hero hero cta1"
+                    "hero hero cta2";
+            }
+}

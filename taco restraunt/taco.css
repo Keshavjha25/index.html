@@ -14,6 +14,7 @@ body {  /* this tag is copied from the original*/
     /* background: white; */
     background-attachment: fixed;
     letter-spacing: -1px;
+    font-size: 15px;
   }
   .menu-ul{
     display: grid;
@@ -94,6 +95,41 @@ body {  /* this tag is copied from the original*/
     margin: 0;
     font-weight: 600;
 }
+
+#features{
+    display: flex;
+    color: black;
+    box-shadow: gray;
+    
+}
+
+.feature{
+    background: white;
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center;
+    box-shadow: 0 0 4px rgb(0 0 0 / 10%);
+    margin: 10px;
+    
+    
+}
+p{
+    color: gray;
+}
+.icon{
+    margin-bottom: 0px;
+    font-size: 3em;
+}
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 500px)
 {
     .menu-ul{

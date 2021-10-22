@@ -1,4 +1,26 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(10, 0, 26);
+   
+    background-image: repeating-linear-gradient(223deg, #c99999, transparent 100px);
+}
+
 .head-div{
-    
+    text-align: center;
+    padding: 0px;
+    border: black;
+    background-color: rgb(66, 202, 184);
+}
+iframe{
     border: black solid;
+    border-width: 50%;
+    border-radius: 10px;
+
+}
+.btn{
+    background-color: rgb(197, 161, 179);
+    border-radius: 10px;
+    border: black solid;
+    padding: 10px, 0px, 10px, 0px;
+    margin: 5px;
 }

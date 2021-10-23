@@ -59,13 +59,13 @@ body {  /* this tag is copied from the original*/
 .div0 h1{
     background-color: #ffc600;
     padding: 10px;
-    font-weight: bolder;
+    font-weight: 750;
     font-size: 25px;
 }
 .div0 p{
     display: grid;
     font-size: 20px;
-    font-weight: bolder;
+    font-weight: 800;
     background-color: #ffc600;
 }
 .div1{
@@ -85,13 +85,13 @@ body {  /* this tag is copied from the original*/
     border-radius: 13px;
 }
 .rate{
-    font-size: 8em;
+    font-size: 4em;
     padding: 0px;
     margin: 0px;
     font-weight: 320;
 }
 .item{
-    font-size: 3em;
+    font-size: em;
     margin: 0;
     font-weight: 600;
 }
@@ -113,19 +113,67 @@ body {  /* this tag is copied from the original*/
     
     
 }
-p{
+#features p{
+    margin: 0px;
+    padding: 0px;
     color: gray;
 }
 .icon{
-    margin-bottom: 0px;
+    margin: 0px;
+    padding: 0px;
     font-size: 3em;
 }
 
 
+#big-taco{
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    background: #fff;
+    margin: 10px;
+    grid-template-columns: 479px 1fr;
+    font-weight: 750;
+
+}
+
+.about-taco{
+    align-self: center;
+}
 
 
+.btn{
+    background: #ffc600;
+    padding: 15px;
+    border: none;
+}
 
 
+.gallery {
+    display: grid;
+    grid-gap: 20px;
+    padding: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.gallery h2{
+    align-content: center;
+}
+
+/* .gallery h2:before, .gallery h2:after {
+    display: block;
+    content: '';
+    height: 10px;
+    background: linear-gradient(to var(--direction, left), var(--yellow), transparent);
+}
+.gallery h2:after {
+    --direction: right;
+}
+
+.gallery h2:before, .gallery h2:after {
+    display: block;
+    content: '';
+    height: 10px;
+    background: linear-gradient(to var(--direction, left), var(--yellow), transparent);
+}
+*/
 
 
 
@@ -156,5 +204,32 @@ p{
                 grid-template-areas:
                     "hero hero cta1"
                     "hero hero cta2";
+            }
+
+            #features{
+                display: block;
+                color: black;
+                box-shadow: gray;
+                
+            }
+
+
+            #features{
+                display: grid;
+                grid-template-columns: max-content;
+                color: black;
+                box-shadow: gray;
+                
+            }
+            
+            .feature{
+                background: white;
+                padding: 10px;
+                border: 1px solid white;
+                text-align: center;
+                box-shadow: 0 0 4px rgb(0 0 0 / 10%);
+                margin: 10px;
+                
+                
             }
 }
